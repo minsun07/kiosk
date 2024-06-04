@@ -121,16 +121,17 @@ ul {
   margin-right: 25px;
   width: 480px;
   height: 350px;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 #selected-menu-list{
-  
-  width: 450px;
+  width: 280px;
   height: 20px;
   font-size: 30px;
   list-style-type: none;
   padding: 0;
+  display: table;
+  text-align: left;
 }
-li{
-  width: 450px;
-}
+
