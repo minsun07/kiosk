@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kiosk</title>
+<link rel="stylesheet" href="../CSS_/styles.css">
+<link rel="stylesheet" href="../CSS_/MenuList.css">
+</head>
+<body>
+<div id="content"> <!--추가-->
+  <div id="wrapper">
+    <div id="menu">
+      <!--active추가-->
+      <div class="category decaf active" onclick="showCategory('decaf')">추천 메뉴</div>
+      <div class="category coffee" onclick="showCategory('coffee')">커피</div>
+      <div class="category smoothie" onclick="showCategory('smoothie')">스무디&프라페</div>
+      <div class="category ade" onclick="showCategory('ade')">에이드&주스</div>
+      <div class="category tea" onclick="showCategory('tea')">티</div>
+      <div class="category dessert" onclick="showCategory('dessert')">디저트</div>
+    </div>
+    <div id="menu-items">
+      <div class="item decaf active"> <!--active 추가-->
+        <!-- 추천 메뉴 -->
+        <h2>추천 메뉴</h2>
+        <!--이미지 스타일 지우고 클래스명 지정 후 css로옮김-->
+        <img src="../Photo/딸기쿠키프라페.png" alt="딸기쿠키프라페" class="img" onclick="addFunction('딸기쿠키프라페')">
+        <img src="../Photo/쿠키프라페.png" alt="쿠키프라페" class="img" onclick="addFunction('쿠키프라페')">
+        <img src="../Photo/녹차프라페.png" alt="녹차프라페" class="img" onclick="addFunction('녹차프라페')">
+        <img src="../Photo/블루레몬에이드.png" alt="블루레몬에이드" class="img" onclick="addFunction('블루레몬에이드')">
+        <img src="../Photo/티라미수케익.png" alt="티라미수케익" class="img" onclick="addFunction('티라미수케익')">
+        <img src="../Photo/허니브레드.png" alt="허니브레드" class="img" onclick="addFunction('허니브레드')">
+        <img src="../Photo/버터버터소금빵.png" alt="버터버터소금빵" class="img" onclick="addFunction('버터버터소금빵')">
+        <img src="../Photo/아이스허니와앙슈.png" alt="아이스허니와앙슈" class="img" onclick="addFunction('아이스허니와앙슈')">
+      </div>
+      <div class="item coffee">
+        <!-- 커피 메뉴 -->
+        <h2>커피 메뉴</h2>
+        <img src="../Photo/아이스 아메리카노.png" alt="아이스 아메리카노" class="img" onclick="addFunction('아이스 아메리카노')">
+        <img src="../Photo/바닐라라떼.png" alt="바닐라라떼" class="img" onclick="addFunction('바닐라라떼')">
+        <img src="../Photo/카페라떼.png" alt="카페라떼" class="img" onclick="addFunction('카페라떼')">
+        <img src="../Photo/카푸치노.png" alt="카푸치노" class="img" onclick="addFunction('카푸치노')">
+        <img src="../Photo/아메리카노.png" alt="아메리카노" class="img" onclick="addFunction('아메리카노')"> 
+        <img src="../Photo/카페모카.png" alt="카페모카" class="img" onclick="addFunction('카페모카')">
+        <img src="../Photo/카라멜마끼아또.png" alt="카라멜마끼아또" class="img" onclick="addFunction('카라멜마끼아또')">
+        <img src="../Photo/에스프레소.png" alt="에스프레소" class="img" onclick="addFunction('에스프레소')">
+
+        
+      </div>
+      <div class="item smoothie">
+        <!-- 스무디&프라페 메뉴 -->
+        <h2>스무디&프라페 메뉴</h2>
+        <img src="../Photo/리얼초코프라페.png" alt="리얼초코프라페" class="img" onclick="addFunction('리얼초코프라페')">
+        <img src="../Photo/딸기쿠키프라페.png" alt="딸기쿠키프라페" class="img" onclick="addFunction('딸기쿠키프라페')">
+        <img src="../Photo/유니콘프라페.png" alt="유니콘프라페" class="img" onclick="addFunction('유니콘프라페')">
+        <img src="../Photo/딸기퐁크러쉬.png" alt="딸기퐁크러쉬" class="img" onclick="addFunction('딸기퐁크러쉬')">
+        <img src="../Photo/쿠키프라페.png" alt="쿠키프라페" class="img" onclick="addFunction('쿠키프라페')">
+        <img src="../Photo/녹차프라페.png" alt="녹차프라페" class="img" onclick="addFunction('녹차프라페')">
+        <img src="../Photo/딸기요거트스무디.png" alt="딸기요거트스무디" class="img" onclick="addFunction('딸기요거트스무디')">
+        <img src="../Photo/망고요거트스무디.png" alt="망고요거트스무디" class="img" onclick="addFunction('망고요거트스무디')">
+
+      </div>
+
+      <div class="item ade">
+        <!-- 에이드&주스 메뉴 -->
+        <h2>에이드&주스 메뉴</h2>
+        <img src="../Photo/블루레몬에이드.png" alt="블루레몬에이드" class="img" onclick="addFunction('블루레몬에이드')">
+        <img src="../Photo/라임모히또.png" alt="라임모히또" class="img" onclick="addFunction('라임모히또')">
+        <img src="../Photo/자몽에이드.png" alt="자몽에이드" class="img" onclick="addFunction('자몽에이드')">
+        <img src="../Photo/레몬에이드.png" alt="레몬에이드" class="img" onclick="addFunction('레몬에이드')">
+        <img src="../Photo/딸기주스.png" alt="딸기주스" class="img" onclick="addFunction('딸기주스')">
+        <img src="../Photo/레드오렌지자몽주스.png" alt="레드오렌지자몽주스" class="img" onclick="addFunction('레드오렌지자몽주스')">
+        <img src="../Photo/딸기바나나주스.png" alt="딸기바나나주스" class="img" onclick="addFunction('딸기바나나주스')">
+        <img src="../Photo/샤인머스캣그린주스.png" alt="샤인머스캣그린주스" class="img" onclick="addFunction('샤인머스캣그린주스')">
+
+      </div>
+      <div class="item tea">
+        <!-- 티 메뉴 -->
+        <h2>티 메뉴</h2>
+        <img src="../Photo/녹차.png" alt="녹차" class="img" onclick="addFunction('녹차')">
+        <img src="../Photo/제로복숭아아이스티.png" alt="제로복숭아아이스티" class="img" onclick="addFunction('제로복숭아아이스티')">
+        <img src="../Photo/레몬차ice.png" alt="레몬차ice" class="img" onclick="addFunction('레몬차ice')">
+        <img src="../Photo/자몽차.png" alt="자몽차" class="img" onclick="addFunction('자몽차')">
+        <img src="../Photo/허니자몽블랙티.png" alt="허니자몽블랙티" class="img" onclick="addFunction('허니자몽블랙티')">
+        <img src="../Photo/유자차.png" alt="유자차" class="img" onclick="addFunction('유자차')">
+        <img src="../Photo/얼그레이.png" alt="얼그레이" class="img" onclick="addFunction('얼그레이')">
+        <img src="../Photo/사과유자차.png" alt="사과유자차" class="img" onclick="addFunction('사과유자차')">
+        
+ 
+      </div>
+      <div class="item dessert">
+        <!-- 디저트 메뉴 -->
+        <h2>디저트 메뉴</h2>
+        <img src="../Photo/초코무스케익.png" alt="초코무스케익" class="img" onclick="addFunction('초코무스케익')">
+        <img src="../Photo/티라미수케익.png" alt="티라미수케익" class="img" onclick="addFunction('티라미수케익')">
+        <img src="../Photo/허니브레드.png" alt="허니브레드" class="img" onclick="addFunction('허니브레드')">
+        <img src="../Photo/버터버터소금빵.png" alt="버터버터소금빵" class="img" onclick="addFunction('버터버터소금빵')">
+        <img src="../Photo/아이스허니와앙슈.png" alt="아이스허니와앙슈" class="img" onclick="addFunction('아이스허니와앙슈')">
+        <img src="../Photo/아이스 딸기라떼 와앙 슈.png" alt="아이스 딸기라떼 와왕 슈" class="img" onclick="addFunction('아이스 딸기라떼 와왕 슈')">
+        <img src="../Photo/초코스모어쿠키.png" alt="초코스모어쿠키" class="img" onclick="addFunction('초코스모어쿠키')">
+        <img src="../Photo/말차스모어쿠키.png" alt="말차스모어쿠키" class="img" onclick="addFunction('말차스모어쿠키')">
+      </div>
+    </div>
+  </div>
+  <ul id="footer"> <!--ul 이름 지정-->
+    <div  class="selected-menu">
+      <ul id="selected-menu-list"></ul>  <!-- 선택한 메뉴를 표시할 리스트 -->
+    </div>
+    <div class="bundle_box2_4">
+      <div class="box2">
+        <p class="fontsi">남은 시간<br> <span id="timer"></span> 초</p>
+        <input type="button" value="전체
+삭제" class="box3" id="delect-message">
+      </div>
+      <div class="box4">
+        <p class="fontsi">선택한 상품 &emsp;&emsp;&emsp;&emsp;개</p>
+        <input type="button" value="             원
+  결제하기" class="acpayment" id="pay-message">
+      </div>
+    </div>
+  </ul>
+</div>
+
+<script src="../JS_/change.js"></script>
+<script src="../JS_/payment.js"></script> 
+<script src="../JS_/timer.js"></script> 
+<script src="../JS_/onclick.js"></script>
+
+
+</body>
+</html>
